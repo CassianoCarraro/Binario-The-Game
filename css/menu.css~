@@ -1,0 +1,101 @@
+#titulo{
+	width: 425px;
+	top: 5%;
+	left: 10%;
+	position:absolute;
+	font-size: 100px;
+	font-weight: bold;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: #FFF;
+	z-index:10;
+}
+#titulo p[id=tilt]{
+	color:blue;
+}
+#titulo p[id=shadow]{
+	color:red;
+}
+#menu, #menu_instrucoes, #menu_iniciar, #menu_creditos{
+	width: 800px;
+	height: 600px;
+	position:absolute;
+    left:50%;
+    top:50%;
+    margin:-300px 0px 0px -400px;
+}
+#menu{
+	background-image: url("imagens/bg_menu.png");
+}
+#menu_instrucoes{
+	background-color: #4476AB;
+}
+#menu_iniciar{
+	background-color: #4476AB;
+}
+#menu_creditos{
+	background-color: #4476AB;
+}
+
+#inicio{
+	font-family:sans-serif;
+	font-weight:bold;
+	width: 150px;
+	height: 50px;
+	background-color: #4476AB;
+	position:absolute;
+	top: 60%;
+	left:71%;
+	cursor: pointer;
+	color: #FFFFFF;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#inicio:hover, #instrucoes:hover, #creditos:hover{
+	background-color: #9ACD32;
+	color: black;
+}
+
+#instrucoes{
+	font-family:sans-serif;
+	font-weight:bold;
+	width: 150px;
+	height: 50px;
+	background-color: #4476AB;
+	position:absolute;
+	top: 70%;
+	left:71%;
+	cursor: pointer;
+	color: #FFFFFF;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#creditos{
+	font-family:sans-serif;
+	font-weight:bold;
+	width: 150px;
+	height: 50px;
+	background-color: #4476AB;
+	position:absolute;
+	top: 80%;
+	left:71%;
+	cursor: pointer;
+	color: #FFFFFF;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: 10px;
+}
+#menu_instrucoes, #menu_iniciar, #menu_creditos{
+	visibility: hidden;
+}
+.balao_principal{
+	width: 92%;
+	height: 65%;
+	padding: 10px;
+	margin: 20px auto;
+	background-color: #FFF;
+	border-radius: 10px;
+}

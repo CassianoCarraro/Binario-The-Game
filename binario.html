@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="css/pagina.css" />
+	<link type="text/css" rel="stylesheet" href="css/menu.css" />
+	<link type="text/css" rel="stylesheet" href="css/jogo.css" />
+	<link type="text/css" rel="stylesheet" href="css/ui-lightness/jquery_ui.css" />
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery_ui.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/jogo.js"></script>
+	<script src="js/jquery_cookie.js"></script>
+	<script src="js/navegador.js"></script>
+	<title>01100010011010010110111011100001011100100110100101101111</title>
+</head>
+<body>
+<div id="menu_creditos">
+	<div class="balao_principal">
+	</div>
+</div>
+
+<div id="menu">
+	<div id="lang_icos">
+		<img src="css/imagens/lang_pt.png" id="ico_lang_pt" alt="Bandeira do Brasil, linguagem portugês" />
+		<img src="css/imagens/lang_es.png" id="ico_lang_es" alt="Bandeira da Espanha, linguagem espanhol" />
+		<img src="css/imagens/lang_en.png" id="ico_lang_en" alt="Bandeira Inglaterra, linguagem inglês" />
+	</div>
+	<div id="titulo"><h1 id="tilt">B1NÁR10</h1><h1 id="shadow">B1NÁR10</h1></div>
+	<div id="inicio"></div>
+	<div id="creditos"></div>
+</div>
+	
+<div id="menu_instrucoes">
+	<div class="balao_principal">
+		<h2>B1NÁR10 - The Game</h2>
+		<p></p>
+        <div class="btn_avancar"><img src="css/imagens/seta_forward.png" alt="Botão avançar" /></div>
+		<div class="btn_voltar"><img src="css/imagens/seta_back.png" alt="Botão voltar" /></div>
+	</div>
+</div>
+	
+<div id="menu_instrucoes2">
+	<div class="balao_principal">
+		<h2>B1NÁR10 - The Game</h2>
+		<p></p>
+		<p id="instru_1"></p>
+		<p id="instru_2"></p>
+		<div class="btn_voltar"><img src="css/imagens/seta_back.png" alt="Botão voltar" /></div>
+                <div id="lets_play" class="btn_jogar"><p>Jogar</p></div>
+	</div>
+</div>
+
+<div id="jogo">
+	<div id='painel_controle'>
+            <div id="time">
+            	<img src="./css/imagens/crono.png" alt="Cronômetro" />
+               	<span class="seconds"></span>
+                <span>:</span>
+                <span class="minutes"></span>
+            </div>
+            <div>
+                <audio id="controleSom">
+                    <source type="audio/ogg" id="som_ogg" src="#" />
+                    <source type="audio/mpeg" id="som_mp3" src="#" />
+                    Navegador não suporta arquivo de audio.
+                </audio>
+                <audio id="hitSom">
+                    <source type="audio/ogg" id="hit_ogg" src="#" />
+                    <source type="audio/mpeg" id="hit_mp3" src="#" />
+                    Navegador não suporta arquivo de audio.
+                </audio>
+                <audio id="nxtLvl">
+                    <source type="audio/ogg" src="#" />
+                    <source type="audio/mpeg" src="#" />
+                    Navegador não suporta arquivo de audio.
+                </audio>
+                <div id="controle_musica">
+                    <input type="image" alt="Pausar/Despausar musica" src="./css/imagens/ico_som.png" id="contrl_musica"/>
+                </div>
+                <div id="pontuacao">
+                    <span id="txt_pontuacao">Pontuação: </span>
+                    <span id="num_pontuacao"></span>
+                </div>
+                <div id="pausa_jogo">
+                	<input type="image" alt="Pausar/Despausar jogo">
+                </div>
+            </div>
+	</div>	
+    <div id='area_game' style="position: fixed;">
+    <div id="fundo">&nbsp;</div>
+    </div>
+    <div id="raia_bot">
+    	<span>128</span>
+    	<span>64</span>
+    	<span>32</span>
+    	<span>16</span>
+    	<span>8</span>
+    	<span>4</span>
+    	<span>2</span>
+    	<span>1</span>
+    </div>	
+</div>
+</body>
+</html>

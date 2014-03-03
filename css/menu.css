@@ -1,0 +1,202 @@
+#titulo{
+	width: 425px;
+	top: 5%;
+	left: 10%;
+	position:absolute;
+	font-size: 48px;
+	font-weight: bold;
+	font-family: Monaco, monospace;
+	color: #FFF;
+}
+#titulo h1[id=tilt]{
+	color:#FFF;
+}
+#titulo h1[id=shadow]{
+	color:#FFF;
+	margin: -177px auto;
+	text-shadow: 8px 8px 10px #000;
+}
+#menu_instrucoes h2, #menu_instrucoes2 h2{
+	color: #e2fffe;
+	text-shadow: 0px 0px 10px #FFF;
+	text-align: center;
+	font-size: 36px;
+}
+
+#menu, #menu_instrucoes, #menu_instrucoes2, #menu_creditos{
+    width: 800px;
+    height: 600px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-300px 0px 0px -400px;
+}
+#menu{
+	background: url("imagens/fundo_inicial.png") no-repeat;
+	visibility: visible; /*Alterar para visible quando canvas estiver pronto*/
+}
+#menu_instrucoes, #menu_instrucoes2, #menu_creditos{
+	background-color: #4476AB;
+	visibility: hidden;
+}
+
+#inicio{
+    font-family:sans-serif;
+    font-weight:bold;
+    width: 200px;
+    height: 50px;
+    background-color: #FFFFFF;
+    position:absolute;
+    top: 60%;
+    left: 60%;
+    cursor: pointer;
+    color: #000000;
+    vertical-align: middle;
+    text-align: center;
+    box-shadow: 3px 3px 10px #000000;
+    opacity: 0.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	-khtml-opacity: 0.7;
+}
+
+#inicio:hover, #instrucoes:hover, #creditos:hover{
+	opacity: 1.0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	-khtml-opacity: 0.7;
+}
+
+#creditos{
+	font-family:sans-serif;
+	font-weight:bold;
+	width: 200px;
+	height: 50px;
+	background-color: #FFFFFF;
+	position:absolute;
+	top: 70%;
+	left:60%;
+	cursor: pointer;
+	color: #000000;
+	vertical-align: middle;
+	text-align: center;
+    box-shadow: 3px 3px 10px #000000;
+    opacity: 0.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	-khtml-opacity: 0.7;
+}
+#menu_instrucoes,#menu_instrucoes2, #menu_creditos{
+	visibility: hidden;
+}
+#menu_instrucoes,#menu_instrucoes2 .balao_principal p{
+	text-align: justify;
+}
+
+.balao_principal{
+	width: 92%;
+	height: 90%;
+	padding: 10px;
+	background-color: #5B83AB;
+	border: 2px dashed #FFF;
+	margin: 20px auto;
+	border-radius: 2px;
+	box-shadow: 0px 0px 70px #000;
+}
+#menu_creditos .balao_principal a{
+	color: #FFF;
+}
+#menu_creditos .balao_principal a:hover{
+	text-shadow: 0px 0px 10px #FFF;
+}
+.balao_principal p{
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 30px;	
+}
+#menu_creditos .balao_principal p{
+	text-align: center;
+}
+
+.btn_avancar{
+	width: 80px;
+	height: 50px;
+	position:absolute;
+	top: 82%;
+	left: 80%;
+	cursor: pointer;
+}
+
+.btn_avancar img{
+        width: 60px;
+}
+.btn_voltar{
+	width: 80px;
+	height: 50px;
+	position:absolute;
+	top: 82%;
+        left: 10%;
+	cursor: pointer;
+}
+
+.btn_voltar img{
+        width: 60px;
+}
+
+.btn_jogar{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    top: 82%;
+    left: 44%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #FFFFFF;
+    border-radius: 5px;
+    vertical-align: middle;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	-khtml-opacity: 0.7;
+}
+
+.btn_jogar:hover{
+    opacity: 1.0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	-khtml-opacity: 0.7;
+}
+
+.btn_jogar p{
+    font-family:sans-serif;
+    font-weight:bold;
+    color: #000000;
+    margin-top: 10px;
+    text-align: center !important;
+}
+#instru_1{
+	margin-left: 35px;
+}
+#instru_1, #instru_2{
+	width: 320px;
+	text-align: center;
+	padding-right: 10px;
+	margin-top: 50px;
+ 	font-style: italic;
+ 	font-size: smaller;
+ 	text-indent: 0;
+ 	line-height: 20px !important;
+ 	font-weight: normal !important;
+ 	float: left;
+}
+#instru_1 img, #instru_2 img{
+	width: 320px;
+}
+#lang_icos{
+	width: 200px;
+	margin: 20px 0px 0px 600px;
+}
+#lang_icos{
+	cursor: pointer;
+}
+
+#lang_icos img{
+    width: 50px;
+}
