@@ -1,14 +1,17 @@
-var num_div = 0;
-var interval;
-var time;
+var num_div = 0; // Variável com o número de blocos na tela.
+var interval; //Variável para o intervalo do surgimento das barras.
+var time; //Variável para o cronômetro.
 var min;
 var seg;
-var gamePaused = false;
-var nivel = 1;
-var pontuacao;
-var randedMsg = 0;
+var gamePaused = false; //Variável para o estado do jogo.
+var nivel = 1; //Variável apra o nível.
+var pontuacao; //Variável para a pontuação.
+var randedMsg = 0; //Variável para a mensagem exibida ao passar de nível.
 
 var Game = {
+    /*
+        Inicia o jogo.
+    */
     start: function(){
         Game.createBitLine();
         Game.time();
@@ -46,12 +49,15 @@ var Game = {
             }
         }, 10000);
     },
-            
+    
+    /*
+        Cria o bloco dos bits onde o resultado deve ser digitado.
+    */      
     createBitLine: function(){
         var id = num_div++;
         var parent_div = $("<div>").addClass('linha_bit').attr('id', 'linha_'+id);
         
-        var resultado = Math.floor((Math.random()*255)+1); //numero entre 1 e 256
+        var resultado = Math.floor((Math.random()*255)+1); //numero entre 1 e 255
         var binario_resultado = Game.numberToBinarie(resultado);
         for(var i = 0; i < binario_resultado.length; i++){
             var bit = $('<div>').addClass('bit');
@@ -74,7 +80,10 @@ var Game = {
         Game.moveCreatedLine(id);
         Game.atualizar_funcoes();
     },
-            
+    
+    /*
+        Cria o bloco dos bits selecionáveis.
+    */  
     createInvertedBitLine: function(){
         var id = num_div++;
         var parent_div = $("<div>").addClass('linha_bit').attr('id', 'linha_'+id);
@@ -106,6 +115,9 @@ var Game = {
         Game.atualizar_funcoes(); 
     },
 	
+    /*
+        Move os blocos criados.
+    */
     moveCreatedLine: function(id){
         var this_position = $('#linha_'+id).position();
 
@@ -121,6 +133,9 @@ var Game = {
         }, 1500);
     },
     
+    /*
+        Reorganiza os blocos existentes na tela.
+    */
     moveBitLine: function(){
         $(".linha_bit").each(function(){
             var this_position = $(this).position();
@@ -137,7 +152,10 @@ var Game = {
             });
         });
     },
-            
+    
+    /*
+        Deleta blocos específicos.
+    */   
     deleteBitLine: function(id){
         var next_div = $("#"+id).next();
         var next_location = $("#"+id).position().top;
@@ -155,14 +173,17 @@ var Game = {
 		
         Game.verifica_resultado();
     },
-            
+    
+    /*
+        Deleta todos os blocos da tela.
+    */    
     deleteAllBitLines: function(){
         $('.linha_bit').each(function(){
             var id = $(this).attr('id');
             Game.deleteBitLine(id);
         });
     },
-            
+      
     numberToBinarie: function(num){
         var bin = new Array();
         var n = 0;
@@ -214,7 +235,10 @@ var Game = {
             
         }, 1000);
     },
-                
+    
+    /*
+        Verifica o resultado do valor do input com o valor da bit line.
+    */        
     verifica_resultado: function(){
         $(".resultado_player_input").unbind('click');
         $(".resultado_player_input").keyup(function(){
@@ -251,11 +275,11 @@ var Game = {
             }
         });
     },
-            
+
     atualizar_funcoes: function(){
         Game.verifica_resultado();
     },
-            
+
     atualizar_pontuacao: function(){
         $('#num_pontuacao').html(pontuacao);
     },
